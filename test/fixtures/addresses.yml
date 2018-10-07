@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  receiver: MyString
+  province: one
+  address_detail: MyText
+  phone: MyString
+  email: MyString
+
+two:
+  receiver: MyString
+  province: two
+  address_detail: MyText
+  phone: MyString
+  email: MyString

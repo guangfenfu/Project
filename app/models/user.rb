@@ -1,4 +1,5 @@
 class User < ApplicationRecord
   belongs_to :role
-  belongs_to :address
+  has_many :user_addresses
+  has_many :addresses through: :user_addresses
 end

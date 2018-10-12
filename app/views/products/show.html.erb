@@ -1,9 +1,4 @@
-<nav>
-<a href="/">Home</a> |
-<a href="/products/">Product</a> |
-<a href="/users/">User</a> |
-<a href="/about/">About</a> |
-</nav>
+
 
 <h2>Product Details</h2>
 
@@ -18,7 +13,7 @@
       <ul>
         <li><b>Brand:</b> <%= @product.brand.name %></li>
         <li><b>Name:</b> <%= @product.name %></li>
-        <li><b>Price:</b> <%= @product.price %></li>
+        <li><b>Price:</b> $<%= @product.price %></li>
         <li><b>Image Link:</b> <%= @product.image_link %></li>
         <li><b>Rating:</b> <%= @product.rating %></li>
         <li><b>Category:</b> <%= @product.category.name %></li>

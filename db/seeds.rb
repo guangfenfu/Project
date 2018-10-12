@@ -20,7 +20,6 @@
 # Store.destroy_all
 # Color.destroy_all
 
-
 role = Role.create(:name => "admin", :description => "Administrator")
 role.users.create(:name =>Faker::Name.first_name, :password => Faker::Code.ean)
 

@@ -1,7 +1,7 @@
 <nav>
 <a href="/">Home</a> |
 <a href="/products/">Product</a> |
-<a href="/stores/">Store</a> |
+<a href="/users/">User</a> |
 <a href="/about/">About</a> |
 </nav>
 
@@ -18,10 +18,10 @@
 
 <% @products.each do |product| %>
   <tr>
-    <td><%= link_to product.name %></td>
-    <td><%= product.brand %></td>
+    <td><%= link_to product.name, {:action => 'show', :id => product['id']} %></td>
+    <td><%= product.brand.name %></td>
     <td><%= product.price %></td>
-    <td><%= product.category %></td>
+    <td><%= product.category.name %></td>
   </tr>
 <% end %>
 

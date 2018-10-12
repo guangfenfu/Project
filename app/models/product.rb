@@ -9,5 +9,5 @@ class Product < ApplicationRecord
   has_many :product_colors, dependent: :destroy
   has_many :colors, through: :product_colors
 
-  validates :name, :price, :image_link, :description, presence:true
+  validates :name, :image_link, presence:true
 end

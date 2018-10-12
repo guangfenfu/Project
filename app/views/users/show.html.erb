@@ -1,0 +1,16 @@
+<nav>
+<a href="/">Home</a> |
+<a href="/products/">Product</a> |
+<a href="/users/">User</a> |
+<a href="/about/">About</a> |
+</nav>
+
+<h2>User Details</h2>
+
+<h2><%= @user.name %></h2>
+<ul>
+  <li><b>Name:</b> <%= @user.name %></li>
+  <li><b>Role:</b> <%= @user.role.name %></li>
+  <li><b>Role Description:</b> <%= @user.role.description %></li>
+</ul>
+<a href="/users">Back to list</a>

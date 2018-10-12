@@ -8,13 +8,22 @@
 <h2>Product Details</h2>
 
 <h2><%= @product.name %></h2>
-<ul>
-  <li><b>Brand:</b> <%= @product.brand.name %></li>
-  <li><b>Name:</b> <%= @product.name %></li>
-  <li><b>Price:</b> <%= @product.price %></li>
-  <li><b>Image Link:</b> <%= @product.image_link %></li>
-  <li><b>Rating:</b> <%= @product.rating %></li>
-  <li><b>Category:</b> <%= @product.category.name %></li>
-  <b>Description:</b> <%= @product.description %></li>
-</ul>
+<br>
+
 <a href="/products">Back to list</a>
+<table>
+  <tr>
+    <td><img src='<%= @product.image_link%>'></td>
+    <td>
+      <ul>
+        <li><b>Brand:</b> <%= @product.brand.name %></li>
+        <li><b>Name:</b> <%= @product.name %></li>
+        <li><b>Price:</b> <%= @product.price %></li>
+        <li><b>Image Link:</b> <%= @product.image_link %></li>
+        <li><b>Rating:</b> <%= @product.rating %></li>
+        <li><b>Category:</b> <%= @product.category.name %></li>
+        <b>Description:</b> <%= @product.description %></li>
+      </ul>
+    </td>
+  </tr>
+</table>

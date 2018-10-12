@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   get '/' => 'home#index'
   get '/about' => 'home#about'
   get 'stocks/index'
-  get 'products' => 'products#index'
+  # get 'products' => 'products#index'
   get 'stores' => 'stores#index'
   get 'colors/index'
   get 'currencies/index'
@@ -14,8 +14,12 @@ Rails.application.routes.draw do
   get 'roles/index'
   get 'users/index'
   get 'user/index'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  # resources :products
 
-  # root 'home#index'
+  get 'products', to: 'products#index', as: 'products'
+  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  resources :products
+
+  get 'products/:id', to: 'products#show',  as: 'product', id: /\d+/
+
+  root to: 'home#index'
 end

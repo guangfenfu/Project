@@ -8,3 +8,21 @@
 <h1>Products</h1>
 
 
+<table border="1">
+  <tr>
+    <th>Name</th>
+    <th>Brand</th>
+    <th>Price</th>
+    <th>Category</th>
+  </tr>
+
+<% @products.each do |product| %>
+  <tr>
+    <td><%= link_to product.name %></td>
+    <td><%= product.brand %></td>
+    <td><%= product.price %></td>
+    <td><%= product.category %></td>
+  </tr>
+<% end %>
+
+</table>

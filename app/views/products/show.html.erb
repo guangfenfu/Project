@@ -1,0 +1,22 @@
+<nav>
+<a href="/">Home</a> |
+<a href="/products/">Product</a> |
+<a href="/stores/">Store</a> |
+<a href="/about/">About</a> |
+</nav>
+
+<h2>Product Details</h2>
+
+<h2><%= @product.name %></h2>
+<p>
+  <b>Brand:</b> <%= @product.brand.name %>
+  <b>Name:</b> <%= @product.name %>
+  <b>Price:</b> <%= @product.price %>
+  <b>Image Link:</b> <%= @product.image_link %>
+  <b>Rating:</b> <%= @product.rating %>
+  <b>Category:</b> <%= @product.category.name %>
+  <b>Rating:</b> <%= @product.rating %>
+  <b>Color:</b> <%= @product.color.colour_name %>
+  <b>Description:</b> <%= @product.description %>
+
+</p>

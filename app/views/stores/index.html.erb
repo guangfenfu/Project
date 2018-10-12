@@ -5,5 +5,20 @@
 <a href="/about/">About</a> |
 </nav>
 
-<h1>Stores#index</h1>
-<p>Find me in app/views/stores/index.html.erb</p>
+<h1>Stores</h1>
+
+
+<table border="1">
+  <tr>
+    <th>Name</th>
+    <th>Address</th>
+  </tr>
+
+<% @stores.each do |store| %>
+  <tr>
+    <td><%= link_to store.name %></td>
+    <td><%= store.address %></td>
+  </tr>
+<% end %>
+
+</table>

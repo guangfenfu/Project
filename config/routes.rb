@@ -2,8 +2,8 @@ Rails.application.routes.draw do
   get '/' => 'home#index'
   get '/about' => 'home#about'
   get 'stocks/index'
-  get 'products/index'
-  get 'stores/index'
+  get 'products' => 'products#index'
+  get 'stores' => 'stores#index'
   get 'colors/index'
   get 'currencies/index'
   get 'categories/index'
@@ -15,8 +15,7 @@ Rails.application.routes.draw do
   get 'users/index'
   get 'user/index'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  resources :products
-  root 'products#index'
+  # resources :products
 
   # root 'home#index'
 end
